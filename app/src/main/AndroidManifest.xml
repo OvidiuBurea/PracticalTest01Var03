@@ -21,6 +21,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name=".PracticalTest01Var03Service"
+            android:exported="true" />
+        <receiver android:name=".PracticalTest01Var03Service"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="ro.pub.cs.systems.eim.practicaltest01var03.SUM_ACTION" />
+                <action android:name="ro.pub.cs.systems.eim.practicaltest01var03.DIFFERENCE_ACTION" />
+            </intent-filter>
+        </receiver>
+        <activity android:name=".PracticalTest01Var03SecondoryActivity" />
+
     </application>
 
 </manifest>
